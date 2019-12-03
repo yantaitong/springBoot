@@ -1,0 +1,40 @@
+#server:
+#  port: 8081
+#  servlet:
+#    context-path: /config
+
+#单引号和双引号
+nameDouble: "zhangsan \n lisi"
+
+nameFloat: 'zhangsan \n lisi'
+
+#对象 Map 键值对（属性和值）
+friends:
+  lastName: zhangsan
+  age: 20
+
+#行内写法
+friendsLine: {lastName: zhangsan, age: 20}
+
+#数组【List Set】
+pets:
+  - cat
+  - dog
+  - pig
+
+#行内写法
+psetsLine: [cat,dog,pig]
+
+
+person:
+  lastName: zhangsan
+  age: 18
+  boss: true
+  birth: 2019/09/06
+  maps: {k1: v1,k2: v2}
+  lists:
+    - lisi
+    - zhaoliu
+  dog:
+    name: dog
+    age: 2

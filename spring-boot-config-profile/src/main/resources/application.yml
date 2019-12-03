@@ -1,0 +1,30 @@
+server:
+  port: 8084
+  servlet:
+    context-path: /configProfiles
+#spring:
+#  profiles:
+#    active: dev
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+
+debug: true
+---
+server:
+     port: 8085
+spring:
+  profiles: dev #指定属于哪个环境
+debug: true
+---
+server:
+     port: 8086
+spring:
+  profiles: uat
+
+---
+server:
+  port: 8087
+spring:
+  profiles: prd
